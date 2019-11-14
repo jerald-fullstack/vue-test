@@ -1,0 +1,63 @@
+﻿
+.roomSelectHolder .left .main { height: calc(100% - 124px); }
+
+.roomSelect { height: 100%; }
+
+.roomSelect .floorNav { width: 45%; text-align: center; margin-top: 60px; margin-bottom: 30px; position: absolute; z-index: 1; }
+.roomSelect .floorNav > ul { margin: 0; padding: 0; }
+.roomSelect .floorNav > ul > li { display: inline-block; min-width: 80px; font-weight: 300; font-size: 16px; color: #c6c6c6; position: relative; }
+.roomSelect .floorNav > ul > li:hover a { color: #30383c; }
+.roomSelect .floorNav > ul > li.active { font-weight: 600; color: #30383c; }
+.roomSelect .floorNav > ul > li.active:hover a { color: #30383c; }
+.roomSelect .floorNav > ul > li.magicLine { width: 36px; min-width: 0; height: 2px; padding: 0; background: #d21f39; position: absolute; bottom: 0; left: 0; -moz-transition: left .35s; -o-transition: left .35s; -webkit-transition: left .35s; transition: left .35s; z-index: 0; }
+.roomSelect .floorNav > ul > li > a { display: block; font-size: 16px; padding: 0 10px 10px; line-height: 16px; }
+
+.roomSelect > .floors { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
+.roomSelect > .floors .right { padding-top: 32px; }
+.roomSelect > .floors .right .back a.button { padding-left: 30px; }
+
+.roomSelect .floorSelect { max-width: 450px; height: calc(100% - 60px); margin: 115px auto 0; }
+.roomSelect .floorSelect > .floorPlan { display: none; }
+.roomSelect .floorSelect > .floorPlan.active { display: block; height: 100%; }
+.roomSelect .floorSelect > .floorPlan svg { max-height: 100%; }
+.roomSelect .floorSelect > .floorPlan svg .stPin { opacity: 0; -webkit-transition: opacity .35s; transition: opacity .35s; }
+.roomSelect .floorSelect > .floorPlan svg .stPin.visible { opacity:1; }
+.roomSelect .floorSelect > .floorPlan svg .stPin.inactive { opacity: 0; }
+.roomSelect .floorSelect > .floorPlan svg .stHover { fill: transparent; cursor: pointer; -webkit-transition: fill .35s; transition: fill .35s;  }
+.roomSelect .floorSelect > .floorPlan svg .stHover:hover { fill: #30383c; }
+.roomSelect .floorSelect > .floorPlan svg .stHover.active { fill: #d21f39; }
+
+.roomSelect .roomInfos { padding-right: 70px; padding-left: 30px; }
+.roomSelect .roomInfos > .roomInfo { display: none; }
+.roomSelect .roomInfos > .roomInfo.active { display: block; }
+.roomSelect .roomInfos > .roomInfo.welcome .subtitle { margin-bottom: 15px; font-size: 36px; line-height: 40px; font-weight: 700; }
+.roomSelect .roomInfos > .roomInfo .image { margin-bottom: 20px; }
+.roomSelect .roomInfos > .roomInfo .image img { display: block; }
+.roomSelect .roomInfos > .roomInfo .detail { margin-bottom: 10px; color: #4a4a4a; }
+.roomSelect .roomInfos > .roomInfo .detail > div { float: left; }
+.roomSelect .roomInfos > .roomInfo .detail .layout { width: 100px; }
+.roomSelect .roomInfos > .roomInfo .detail .desc { padding: 0 20px; }
+.roomSelect .roomInfos > .roomInfo .detail .desc .top { line-height: 30px; }
+.roomSelect .roomInfos > .roomInfo .detail .desc .top .title { font-size: 26px; font-weight: 700; letter-spacing: -1px; margin-bottom: 8px; }
+.roomSelect .roomInfos > .roomInfo .detail .desc .info { color: #a7a7a7; line-height: 17px; }
+
+.roomSelect .buttonsLeft { position: absolute; left: 0; bottom: 0; }
+.roomSelect .buttonsLeft .progressBtn { height: 50px; }
+.roomSelect .buttonsLeft .resetBtn { height: 50px; min-width: 285px; }
+
+@media(max-height:780px) {
+
+    .roomSelect .roomInfos > .roomInfo .detail { margin-bottom: 0; }
+    .roomSelect .roomInfos > .roomInfo .detail .layout { width: 75px; }
+}
+
+@media(max-height:720px) {
+    .roomSelectHolder .left .main { margin-top: 0; }
+
+    .roomSelect .roomInfos > .roomInfo .detail .desc .top .title { font-size: 20px; }
+    .roomSelect .roomInfos > .roomInfo .content { padding-bottom: 20px; }
+}
+
+@media(max-height:620px) {
+    .roomSelect .roomInfos > .roomInfo .content { display: none; }
+}

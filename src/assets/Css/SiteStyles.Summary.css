@@ -1,0 +1,77 @@
+﻿.summaryPage { background: #fff; overflow: auto; }
+
+.configTopNav { background: none; color: #30383c; }
+.configTopNav a:hover { color: #30383c; }
+
+.summaryPage .title { margin: 40px 0 90px; font-size: 50px; font-weight: 700; line-height: 43px; }
+.summaryPage .summaryInner { width: 90%; height: calc(100% - 138px); margin: 0 auto; padding-bottom: 50px; }
+.summaryPage .left { float: left; width: 50%; height: calc(100% - 132px); }
+.summaryPage .right { position: fixed; right: 5%; top: 50%; width: 44.525%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.summaryPage .right .rightInner { margin-left: 15px; }
+
+.summaryPage .right .rightInner .image { position: relative; height: 0; padding: 28.15%; }
+.summaryPage .right .rightInner .image img { position: absolute; top: 0; left: 0; width: 100%; }
+
+.summaryPage .right .rightInner .viewOptions .view { float: left; width: 75px; height: 42px; margin-right: 12px; background-position: center; background-size: 100% auto; background-size: cover; background-repeat: no-repeat; -webkit-transition: box-shadow .35s; transition: box-shadow .35s; }
+.summaryPage .right .rightInner .viewOptions .view:hover,
+.summaryPage .right .rightInner .viewOptions .view.active { box-shadow: inset 0 0 0 2px #d21f39; }
+
+.summaryPage .roomSelect { height:  100%; }
+.summaryPage .roomInfos { height:  100%; }
+.summaryPage .roomInfos .scroll-content { padding-right: 10px; }
+.summaryPage .roomInfo:first-child .roomDetails { border-top: 1px solid #dedede; }
+
+.summaryPage .roomOptionsView .roomDetails { padding: 30px 15px; border-bottom: 1px solid #dedede; }
+.summaryPage .roomOptionsView .roomDetails > div { float: left; line-height: 24px; }
+.summaryPage .roomOptionsView .roomDetails .roomName,
+.summaryPage .roomOptionsView .roomDetails .roomTotalPrice { font-size: 30px; font-weight: 700; }
+.summaryPage .roomOptionsView .roomDetails .roomName { width: 68%; }
+.summaryPage .roomOptionsView .roomDetails .roomName > div { float: left; }
+.summaryPage .roomOptionsView .roomDetails .roomTotalPrice { width: 17%; text-align: right; }
+.summaryPage .roomOptionsView .roomDetails .roomExpander { width: 15%; height: 24px; text-align: right; }
+.summaryPage .roomOptionsView .roomDetails .roomExpander button { display: inline-block; width: 14px; height: 14px; margin-right: 3px; background: no-repeat; outline: none; border-top: 3px solid #c4c4c4; border-left: 3px solid #c4c4c4; font-size: 0; line-height: 0; cursor: pointer; position: relative; top: -9px; -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); -webkit-transform: rotate(-135deg); transform: rotate(-135deg); -moz-transition: top .35s, transform .35s; -o-transition: top .35s, transform .35s; -webkit-transition: top .35s, transform .35s; transition: top .35s, transform .35s; }
+.summaryPage .roomOptionsView .roomDetails.open .roomExpander button { border-color: #d21f39; top: 0; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.summaryPage .roomOptionsView .roomOptions { display: none; padding-left: 35px; background: #fafafa; overflow: hidden; }
+
+.summaryPage .roomOptionsView .roomOptions .roomOption { display: flex; height: 100px; width: calc(100% + 135px); position: relative; left: -135px; -webkit-transition: left .5s, height .5s .2s, padding-top .5s .2s, padding-bottom .5s .2s, opacity .5s, border-width .5s; transition: left .5s, height .5s .2s, padding-top .5s .2s, padding-bottom .5s .2s, opacity .5s, border-width .5s; }
+.summaryPage .roomOptionsView .roomOptions .roomOption.confirmRemove { left: -35px; }
+.summaryPage .roomOptionsView .roomOptions .roomOption.removed { height: 0 !important; padding: 0; border-width: 0; opacity: 0; left: 100%; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .removeConfirm { width: 100px; height: 100%; padding: 10px; background: #d21f39; color: #fff; text-align: center; font-weight: 500; position: relative; -moz-transition: background .35s; -o-transition: background .35s; -webkit-transition: background .35s; transition: background .35s; }
+.summaryPage .roomOptionsView .roomOptions .roomOption.removed .removeConfirm { background: #fff; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .removeConfirm img { width: 15px; height: 15px; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .remove { position: absolute; top: 50%; left: 100px; height: 34px; width: 34px; color: #d3d3d3; padding: 11px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.summaryPage .roomOptionsView .roomOptions .roomOption .remove svg { height: 100%; width: 100%; }
+
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionText { flex-grow: 1; padding: 12px; margin-left: 35px; border-bottom: 1px solid #dedede; display: -ms-grid; display: grid; -ms-grid-columns: 155px 1fr 100px; -ms-grid-columns: 155px 1fr 100px; grid-template-columns: 155px 1fr 100px; grid-template-columns: 155px 1fr 100px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionText > *:nth-child(1) { -ms-grid-row: 1; -ms-grid-column: 1; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionText > *:nth-child(2) { -ms-grid-row: 1; -ms-grid-column: 2; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionText > *:nth-child(3) { -ms-grid-row: 1; -ms-grid-column: 3; }
+
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionImage { margin-right: 30px; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionImage img { display: block; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionCategory { line-height: 1; font-size: 15px; font-weight: 400; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionName { line-height: 26px; font-size: 18px; font-weight: 700; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionTooltip { line-height: 15px; font-size: 14px; color: #797979; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionTooltip svg { height: 15px; width: 15px; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionTooltip svg,
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionTooltip > span { display: inline-block; vertical-align: middle; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionControl { color: #797979; text-align: right; }
+.summaryPage .roomOptionsView .roomOptions .roomOption .optionPrice { font-size: 24px; font-weight: 700; text-align: right; line-height: 24px; margin-top: 12px; }
+
+.summaryPage .total { text-align: right; font-size: 32px; line-height: 1; font-weight: 700; margin: 25px 0 35px; }
+.summaryPage .nextButton { float: right; }
+
+@media (max-width:1599px) {
+    .summaryPage .roomOptionsView .roomDetails .roomName { width: 65%; }
+    .summaryPage .roomOptionsView .roomDetails .roomTotalPrice { width: 20%; }
+}
+
+@media(max-width:1099px) {
+
+    .summaryPage .roomOptionsView .roomDetails .roomName { width: 55%; }
+    .summaryPage .roomOptionsView .roomDetails .roomTotalPrice { width: 30%; }
+
+    .summaryPage .roomOptionsView .roomOptions .roomOption .optionName > div > span { display: block; padding-right: 0; }
+    .summaryPage .roomOptionsView .roomOptions .roomOption .optionName > div > span > span:first-of-type { display: block; }
+    .summaryPage .roomOptionsView .roomOptions .roomOption .optionName .upgradeLabel { position: static; }
+}
